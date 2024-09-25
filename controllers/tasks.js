@@ -7,7 +7,6 @@ const getAllTasks = async (req, res) => {
     res.status(500).json({ Error: error.message });
     console.log("\x1b[36m%s\x1b[0m", error.message);
   }
-  res.send("get all tasks");
 };
 
 const createTask = async (req, res) => {
