@@ -57,7 +57,7 @@ const updateTask = async (req, res) => {
     if (!task) {
       return res.status(404).json({ Error: `No task with id : ${taskID}` });
     }
-    res.status(200).json({ id: taskID, data: req.body });
+    res.status(200).json({ task });
   } catch (error) {
     res.status(500).json({ Error: error });
     console.log("\x1b[36m%s\x1b[0m", error.message);
