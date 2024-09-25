@@ -1,4 +1,4 @@
-console.log("Task Manager App");
+console.log("\x1b[36m%s\x1b[0m", "Task Manager App");
 
 const express = require("express");
 const app = express();
